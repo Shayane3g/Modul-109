@@ -1,0 +1,13 @@
+# Modul 109 – Docker
+Theorie --Docker
+--name mynginx 
+ist der Name des erstellten Containers basierend auf dem Nginx -Image 
+-p 8070:80 
+Diese Option weist Docker an, die vom Nginx-Image (Port 80) im Container bereitgestellten Ports dem angegebenen Port auf dem Docker-Host (Port 8070) zuzuordnen. Der erste Parameter gibt den Port im DockerHost an, der zweite Parameter wird dem im Container exponierten Port zugeordnet 
+-d 
+Diese Option gibt an, dass der Container im getrennten Modus ausgeführt wird: Der Container wird weiter ausgeführt, bis er angehalten wird. Die Befehlszeile steht aber wieder zur Verfügung.
+
+docker build -f Dockerfile.web -t [image:tag]
+
+docker run -d -p 8080:8080 --name html-openshift-app [image:tag]
+
