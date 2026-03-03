@@ -17,6 +17,9 @@ docker push gher.io/benschwarz1982/html-openshit-app:latest
 OC Befehle
 html-openshift-app-loesung % oc apply -f oc/01-with
 
+oc create secret docker-registry ghcr --docker-server=ghcr.io --docker-username=shayane3g --docker-password=ghp_ d7zc7HrTiXW3oTWnl4SN5yI5ChbvUB0uXSVz
+oc secrets link default ghcr --for=pull
+
 Theorie Git
 Git:
 1. git-clone URL
@@ -24,4 +27,6 @@ Git:
 3. git commit -m "Initial"
 4. git push
 5. git pull 
+
+
 
