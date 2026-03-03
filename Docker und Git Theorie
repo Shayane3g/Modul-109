@@ -11,3 +11,10 @@ docker build -f Dockerfile.web -t [image:tag]
 
 docker run -d -p 8080:8080 --name html-openshift-app [image:tag]
 
+docker push gher.io/benschwarz1982/html-openshit-app:latest
+
+
+OC Befehle
+html-openshift-app-loesung % oc apply -f oc/01-with
+
+Theorie Git
